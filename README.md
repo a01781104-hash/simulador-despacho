@@ -1,59 +1,71 @@
-# ⚡ Simulador de Despacho Económico — México
+# ⚡ Simulador de Despacho Económico para México
 
-Simulador online de despacho económico horario para los tres sistemas eléctricos aislados de México (SIN, BCA, BCS) usando datos reales de CENACE y PyPSA.
+Simulador de despacho económico horario para los tres sistemas eléctricos aislados de México (SIN, BCA, BCS) usando datos reales de CENACE y optimización con PyPSA.
 
-## Setup rápido
+## 🚀 Cómo correr la aplicación
+
+### Requisitos
+- Python 3.10 o superior
+- pip
+
+### Instalación
 
 ```bash
-# 1. Clonar el repo
-git clone <URL_DEL_REPO>
+# 1. Clonar el repositorio
+git clone https://github.com/TU-USUARIO/simulador-despacho.git
 cd simulador-despacho
 
-# 2. Crear entorno virtual
+# 2. Crear entorno virtual (recomendado)
 python3 -m venv venv
-source venv/bin/activate
+source venv/bin/activate  # En Mac/Linux
+# venv\Scripts\activate   # En Windows
 
 # 3. Instalar dependencias
 pip install -r requirements.txt
 
-# 4. Correr la app
+# 4. Ejecutar la app
 streamlit run app.py
 ```
 
-## Estructura
+La app se abrirá en `http://localhost:8501`.
+
+## 📂 Estructura del proyecto
 
 ```
-├── app.py                    # Página principal
+simulador-despacho/
+├── app.py                          # Página principal
 ├── pages/
-│   ├── 1_📊_Demanda.py      # Demanda CENACE
-│   ├── 2_⚡_Capacidades.py   # Capacidad instalada
-│   ├── 3_🔧_Despacho.py     # Resultados optimización
-│   ├── 4_💰_Sensibilidad.py  # Sliders de costos
-│   ├── 5_🎯_Escenarios.py   # 5 presets
-│   └── 6_📖_Metodologia.py  # Docs y limitaciones
+│   ├── 1_📊_Demanda_CENACE.py     # Descarga y visualización de demanda
+│   ├── 2_🏭_Capacidades.py        # Capacidad instalada por tecnología
+│   ├── 3_🔧_Despacho.py           # Modelo PyPSA y resultados
+│   ├── 4_🎛️_Sensibilidad.py       # Sliders de costos
+│   ├── 5_📈_Escenarios.py         # 5 presets predefinidos
+│   └── 6_📖_Metodología.py        # Documentación y limitaciones
 ├── requirements.txt
 └── README.md
 ```
 
-## Stack
+## 🏗️ Sistemas modelados
+
+| Sistema | Descripción | Cobertura |
+|---------|------------|-----------|
+| SIN | Sistema Interconectado Nacional | ~95% de México |
+| BCA | Baja California | Norte de BC |
+| BCS | Baja California Sur | Sur de BC |
+
+## 🛠️ Stack tecnológico
 
 - **Python** — Lenguaje único
-- **Streamlit** — UI interactiva
-- **PyPSA** — Optimización de despacho (solver HiGHS)
-- **CENACE** — Datos de demanda reales
+- **Streamlit** — Interfaz web interactiva
+- **PyPSA** ≥ 0.26 — Optimización de despacho
+- **HiGHS** — Solver (incluido con Linopy)
 - **Plotly** — Visualizaciones
+- **CENACE API** — Datos de demanda horaria real
 
-## Equipo
+## ⚠️ Limitaciones
 
-| Nombre | Rol |
-|--------|-----|
-| TBD | Project Leader |
-| TBD | Data Pipeline |
-| TBD | Modelo PyPSA |
-| TBD | Frontend/UX |
-| TBD | TBD |
-| TBD | TBD |
+Este simulador es un proyecto académico y **no** replica el despacho real de CENACE. No modela: red interna, interconexiones, unit commitment, reservas, restricciones N-1, ni costos reales por planta.
 
-## Licencia
+## 👥 Equipo
 
-Proyecto académico — Tecnológico de Monterrey, 2025.
+Tec de Monterrey · Campus Santa Fe · 2025
