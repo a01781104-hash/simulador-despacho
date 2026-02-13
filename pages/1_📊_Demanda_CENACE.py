@@ -2,7 +2,7 @@
 📊 Demanda CENACE
 Descarga y visualización de demanda horaria real.
 
-PARA EL EQUIPO (Regina & Musi):
+PARA EL EQUIPO (Alexa & Musi):
 - Esta página muestra la demanda horaria descargada de CENACE.
 - Ustedes conectan el pipeline de datos real (Semana 2).
 - La UI ya tiene los controles y placeholders listos.

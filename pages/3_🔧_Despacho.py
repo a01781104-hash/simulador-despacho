@@ -2,7 +2,7 @@
 🔧 Despacho Económico
 Modelo de optimización PyPSA y resultados.
 
-PARA EL EQUIPO (Jime & Alexa):
+PARA EL EQUIPO (Regi & Jime):
 - Esta página ejecuta y muestra los resultados del modelo PyPSA.
 - La UI está lista; ustedes conectan el modelo.
 """
