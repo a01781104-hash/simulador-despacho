@@ -1,0 +1,23 @@
+sistema,tecnologia,capacidad_mw,costo_variable_usd_mwh,fuente,supuesto_cambio
+SIN,CCGT/Gas,36500,45,PRODESEN 2024-2038 / SENER,+2300 MW nuevos CC en construcción (Salamanca Tula etc)
+SIN,Carbón,5000,60,PRODESEN 2024-2038 / SENER,-400 MW retiros programados
+SIN,Fuel Oil,11500,100,PRODESEN 2024-2038 / SENER,-1300 MW retiros/reconversión
+SIN,Diésel/Peaker,2100,150,PRODESEN 2024-2038 / SENER,Sin cambio
+SIN,Hidro,13100,5,PRODESEN 2024-2038 / SENER,+460 MW rehabilitaciones hidroeléctricas
+SIN,Solar,14500,2,PRODESEN 2024-2038 / SENER-CRE,+5600 MW (Puerto Peñasco + GD + privados)
+SIN,Eólica,8200,3,PRODESEN 2024-2038 / SENER-CRE,+1000 MW proyectos con contrato de interconexión
+SIN,Nuclear,1608,10,PRODESEN 2024-2038 / SENER,Sin cambio (Laguna Verde I y II)
+SIN,Geotérmica,932,5,PRODESEN 2024-2038 / SENER,Sin cambio
+SIN,Batería,500,1,PRODESEN 2024-2038 / SENER,Primeros proyectos de almacenamiento con baterías
+BCA,CCGT/Gas,3100,48,PRODESEN 2024-2038 / SENER,+300 MW nuevo CC
+BCA,Fuel Oil,500,105,PRODESEN 2024-2038 / SENER,-100 MW retiros
+BCA,Diésel/Peaker,180,155,PRODESEN 2024-2038 / SENER,Sin cambio
+BCA,Solar,1800,2,PRODESEN 2024-2038 / SENER-CRE,+600 MW nuevos proyectos solares
+BCA,Eólica,720,3,PRODESEN 2024-2038 / SENER-CRE,+100 MW La Rumorosa II
+BCA,Geotérmica,720,5,PRODESEN 2024-2038 / SENER,Sin cambio
+BCS,CCGT/Gas,420,52,PRODESEN 2024-2038 / SENER,+100 MW nuevo CC BCS
+BCS,Fuel Oil,350,110,PRODESEN 2024-2038 / SENER,-100 MW reconversión
+BCS,Diésel/Peaker,250,160,PRODESEN 2024-2038 / SENER,-30 MW retiros parciales
+BCS,Solar,450,2,PRODESEN 2024-2038 / SENER-CRE,+270 MW solar-térmica y FV anunciados por SENER
+BCS,Eólica,80,3,PRODESEN 2024-2038 / SENER-CRE,+30 MW nuevos proyectos
+BCS,Batería,100,1,PRODESEN 2024-2038 / SENER,Piloto almacenamiento BCS
